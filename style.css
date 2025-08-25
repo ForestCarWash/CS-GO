@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+  background: #1e1e1e;
+  color: white;
+  font-family: monospace;
+  overflow: hidden; /* evita scroll */
+}
+
+/* HUD / Placar / Dinheiro */
+#hudContainer {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  font-family: monospace;
+}
+
+/* Imagens de logo */
+#hudContainer img {
+  height: 40px;
+}
+
+/* Texto de placar */
+#hudContainer div {
+  margin: 0 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 6px black;
+}
+
+/* Texto do dinheiro */
+#hudContainer .money {
+  margin-left: 30px;
+  font-size: 24px;
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Menu de compra */
+.buyMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.9);
+  padding: 30px;
+  border-radius: 12px;
+  z-index: 20;
+  color: white;
+  font-family: monospace;
+}
+
+.buyMenu h2 {
+  margin-bottom: 15px;
+}
+
+.buyMenu button {
+  display: block;
+  margin: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  transition: background 0.2s;
+}
+
+.buyMenu button:hover {
+  background: #555;
+}
+
+/* Scope da AWP */
+#scopeImg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+}
+
+/* Timer do C4 */
+#c4Timer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: yellow;
+  font-family: monospace;
+  z-index: 10;
+}

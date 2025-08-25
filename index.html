@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Lite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="menuMusic" src="sounds/hazardous_environments.wav" loop autoplay></audio>
+
+<script type="module" src="weapons.js"></script>
+<script type="module" src="game.js"></script>
+
+<script>
+  // Configurações do jogo
+  window.gameSettings = {
+    graphics: "medium",
+    sensitivity: 1.0,
+    masterVolume: 1.0,
+    musicVolume: 0.7,
+    sfxVolume: 0.8
+  };
+
+  // Time do jogador: "T" ou "CT"
+  window.playerTeam = "T";
+</script>
+
+</body>
+</html>
